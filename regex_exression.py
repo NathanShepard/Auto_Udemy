@@ -18,6 +18,24 @@ phoneRegex = re.compile(r'''
 
 # how do I run this on a text file?
 
-phoneRegex.find('filename?')
 
 #the email regular espresstion..
+emailRegex = re.compile(r'''
+#some+_thing@(\d{2,5}))?.com  notes for WHAT you are looing to find!
+
+[a-zA-Z0-9_.+]+    #name part
+@                  # @ symbol
+[a-zA-z0-9_.+]+    #domain name part
+
+''', re.VERBOSE
+
+# TODO: Get the test off the clipboard
+
+text = pyperclip.paste()
+
+#TODO: EXTRACT the email/phone from this text
+extractedPhone = phoneRegex.findall(text)
+extractedEmail = emailRegex.findall(text)
+
+print(extractedPhone)
+print(extractedEmail)
