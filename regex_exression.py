@@ -18,6 +18,17 @@ phoneRegex = re.compile(r'''
 
 # how do I run this on a text file?
 
-phoneRegex.find('filename?')
+this = pyperclip.paste()
+
+print(this)
+
+#phoneRegex.find()
+
+# cool I see some of the ideas that this is helping me with I'd like to be able to
+# work with this and not be pervented to work because of the
 
 #the email regular espresstion..
+
+
+
+# testing for the file in Airbook and moving into this ONE and THAT ONE...
